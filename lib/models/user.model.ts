@@ -20,7 +20,11 @@ const userSchema = new mongoose.Schema({
   community:  {
                 type: mongoose.Schema.Types.ObjectId,
                 ref: 'Community',
-              }
+              },
+  // communities:{
+  //               type: mongoose.Schema.Types.ObjectId,
+  //               ref: 'Communities',
+  //             }
 })
 
 const User = mongoose.models.User || mongoose.model('User', userSchema)
