@@ -21,10 +21,10 @@ const userSchema = new mongoose.Schema({
                 type: mongoose.Schema.Types.ObjectId,
                 ref: 'Community',
               },
-  // communities:{
-  //               type: mongoose.Schema.Types.ObjectId,
-  //               ref: 'Communities',
-  //             }
+  communities:[{
+                type: mongoose.Schema.Types.ObjectId,
+                ref: 'Communities',
+              }]
 })
 
 const User = mongoose.models.User || mongoose.model('User', userSchema)

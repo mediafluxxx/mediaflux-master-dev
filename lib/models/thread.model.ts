@@ -11,16 +11,13 @@ const threadSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId, 
     ref: "Community" 
   },
-
   createdAt: {
     type: Date,
     ref: Date.now,
   },
-
   parentId: {
     type: String,
   },
-
   children: [
     {
       type: mongoose.Schema.Types.ObjectId,
